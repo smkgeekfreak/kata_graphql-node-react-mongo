@@ -1,0 +1,20 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon sever.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pino": "^5.13.5",
+    "pino-pretty": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
