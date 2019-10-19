@@ -1,10 +1,17 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
+const cors = require('cors');
 
 const logger = require('./logger')('graphql-server','info'); //TODO: replace with env var
 const schema = require('./schema/schema');
+
 const app = express();
+
+/**
+ * Setup CORS support
+ */
+app.use(cors());
 
 //TODO: externalize to env variable
 const SERVER_PORT = 4100;
